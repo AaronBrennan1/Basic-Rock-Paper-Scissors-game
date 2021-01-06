@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock/Paper/Scissors</title>
+  <link rel='stylesheet' href='RPSgame.css'>
+</head>
+<body>
+    <h3>Pick your weapon! First to 5 wins</h3>
+    <div class="pictures">
+        <div>
+            <p>Press A</p>
+            <img class='rockPic' src='images/rock.jpg'>
+        </div>
+        <div>
+            <p>Press S</p>
+            <img class='paperPic' src='images/paper.jpg'>
+        </div>
+        <div>
+            <p>Press D</p>
+            <img class="scissorsPic" src='images/scissors.jpg'>
+        </div>        
+    </div>
+    <div class="picks">
+        <div class="playerpick">
+            <p>Your pick</p>
+            <img id='playerPick' src='images/rock.jpg'>
+        </div>
+        <div class="computerpick">
+            <p>Computers pick</p>
+            <img id='computerPick' src='images/paper.jpg'>
+        </div>
+    </div>
+    <div class="score">
+        <p>Score:</p>
+        <div class="scoreboard">
+            <span id="playerScore">0</span><span> - </span><span id="computerScore">0</span>
+        </div> 
+        <p class="textResult"></p>
+        <div class="results">
+            <p>Game Over</p>
+            <a href="http://127.0.0.1:5500/RPSgame.html">
+                <button class="playAgainButton">Play again</button>
+            </a>
+            
+        </div>       
+        
+    </div>
+    <script src='RPSgame.js'></script>
+</body>
+</html>
